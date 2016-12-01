@@ -21,6 +21,12 @@ public class GroveController {
         this.groveService = groveService;
     }
 
+    @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @ResponseStatus(HttpStatus.OK)
+    public String helloWorld() {
+        return "Hello World!";
+    }
+
     @RequestMapping(value = "/led", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseStatus(HttpStatus.OK)
     public void toggleLed() throws IOException {
