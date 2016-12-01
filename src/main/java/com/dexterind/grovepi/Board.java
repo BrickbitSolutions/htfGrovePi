@@ -38,7 +38,12 @@ public class Board {
       busId = I2CBus.BUS_1;
     }
 
-    final I2CBus bus = I2CFactory.getInstance(busId);
+    final I2CBus bus;
+    try {
+      bus = I2CFactory.getInstance(busId);
+    } catch (I2CFactory.UnsupportedBusNumberException e) {
+      throw new IOException("Unsupported Bus Number", e);
+    }
     device = bus.getDevice(ADDRESS);
   }
 
