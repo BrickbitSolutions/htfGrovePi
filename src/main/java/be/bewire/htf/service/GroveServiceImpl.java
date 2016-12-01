@@ -14,7 +14,7 @@ public class GroveServiceImpl implements GroveService {
     private final LEDApi ledApi;
 
     public GroveServiceImpl() throws IOException, InterruptedException {
-        this.ledApi = new LEDApi(4);
+        this.ledApi = new LEDApi(3);
     }
 
     public SensorStatus toggleLed() throws IOException {
