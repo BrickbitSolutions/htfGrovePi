@@ -1,5 +1,7 @@
 package be.bewire.htf.service;
 
+import com.dexterind.grovepi.sensors.base.SensorStatus;
+
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -15,7 +17,7 @@ public class GroveServiceImpl implements GroveService {
         this.ledApi = new LEDApi(4);
     }
 
-    public void toggleLed() throws IOException {
-        ledApi.toggle();
+    public SensorStatus toggleLed() throws IOException {
+        return ledApi.toggle();
     }
 }

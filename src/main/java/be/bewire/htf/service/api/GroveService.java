@@ -1,7 +1,9 @@
 package be.bewire.htf.service.api;
 
+import com.dexterind.grovepi.sensors.base.SensorStatus;
+
 import java.io.IOException;
 
 public interface GroveService {
-    void toggleLed() throws IOException;
+    SensorStatus toggleLed() throws IOException;
 }
