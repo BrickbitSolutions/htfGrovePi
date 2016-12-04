@@ -17,7 +17,7 @@ public class BaseTest implements GrovepiListener {
   public BaseTest() throws IOException, InterruptedException {
     System.out.println("-----------------------------------------------------");
     System.out.println(" GrovePi test application");
-    System.out.println("----------------------------------------------------");
+    System.out.println("-----------------------------------------------------");
 
     grovepi = Grovepi.getInstance();
     grovepi.addListener(this);

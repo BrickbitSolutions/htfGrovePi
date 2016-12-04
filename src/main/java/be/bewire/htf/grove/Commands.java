@@ -1,4 +1,4 @@
-package com.dexterind.grovepi.utils;
+package be.bewire.htf.grove;
 
 public class Commands {
   public static final int DREAD                           = 1;
