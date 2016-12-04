@@ -1,7 +1,5 @@
 package be.bewire.htf.controller;
 
-import com.dexterind.grovepi.sensors.base.SensorStatus;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -12,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
+import be.bewire.htf.grove.sensor.SensorStatus;
 import be.bewire.htf.service.api.GroveService;
 
 @RestController
